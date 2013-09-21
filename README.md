@@ -44,3 +44,12 @@ The group values can also be glued with either `&` or `|` operators and they
 will get evaluated accordingly.
 
 ... open to suggestions
+
+P.S. Usage:
+
+	from string_conditions.base import validate, StringConditionsException
+
+	try:
+		validate( "title&text", ["title", "foo", "bar"] )
+	except StringConditionsException:
+		....
