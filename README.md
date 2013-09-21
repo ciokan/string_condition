@@ -1,4 +1,4 @@
-string_condition
+Simple string conditions
 ================
 
 A small python package which evaluates string based conditions.
@@ -8,7 +8,8 @@ but this link can have some widgets attached to it such as a tooltip,
 popover, dropdown, modal etc.
 
 Normally you would declare what widgets are supported by your class in
-an array or dict but here comes the tricky part, some widgets don't get
+an array or dict and loop through it to perform the validations
+but here comes the tricky part, some widgets don't get
 well together. Like the tooltip with the popover or the modal with the
 dropdown so you must somehow enforce a condition for each one in part
 which takes a lot of time, it's not elegant and not isolated (why should
@@ -25,11 +26,19 @@ required attributes, you can also supply a dropdown or modal and you can also
 provide a tooltip, popover or title attribute.
 
 `href&text title|tooltip` - `href` and `text` are required, any or both of
-title and tooltip can be provided.
+title and tooltip must be provided.
 
-`title|text|href` - any or all can be provided. At least one is required
+`title|text|href` - any or all must be provided
 
 `title&text` - both are required
 
 `(title&text|tooltip popover)` - one of the group can be provided and it's
 either `title + text or tooltip` or `popover`
+
+### To wrap things up ######
+
+`&`  (and) binds values and makes them both required
+`|`  (or) any or all of the values separated by pipe can be supplied
+`()` (exclusive) group of exclusive values (only one value from the group can be supplied)
+
+... open to suggestions
