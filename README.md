@@ -39,6 +39,8 @@ either `title + text or tooltip` or `popover`
 
 `&`  (and) binds values and makes them both required  
 `|`  (or) any or all of the values separated by pipe can be supplied  
-`()` (exclusive) group of exclusive values (only one value from the group can be supplied)  
+`()` (exclusive) group of exclusive values (only one value from the group can be supplied) .
+The group values can also be glued with either `&` or `|` operators and they
+will get evaluated accordingly.
 
 ... open to suggestions
