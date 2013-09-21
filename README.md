@@ -37,8 +37,8 @@ either `title + text or tooltip` or `popover`
 
 ### To wrap things up ######
 
-`&`  (and) binds values and makes them both required
-`|`  (or) any or all of the values separated by pipe can be supplied
-`()` (exclusive) group of exclusive values (only one value from the group can be supplied)
+`&`  (and) binds values and makes them both required  
+`|`  (or) any or all of the values separated by pipe can be supplied  
+`()` (exclusive) group of exclusive values (only one value from the group can be supplied)  
 
 ... open to suggestions
