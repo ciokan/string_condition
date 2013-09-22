@@ -43,7 +43,7 @@ either `title + text or tooltip` or `popover`
 The group values can also be glued with either `&` or `|` operators and they
 will get evaluated accordingly.
 
-... open to suggestions
+... open to suggestions. For more examples you can read the `tests.py` file
 
 P.S. Usage:
 

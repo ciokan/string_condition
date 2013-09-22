@@ -4,7 +4,7 @@ readme = open( 'README.md' ).read()
 
 setup(
 	name = 'StringConditions',
-	version = '0.1',
+	version = '0.2',
 	author = 'Mihalcea Romeo',
 	author_email = 'romeo.mihalcea@gmail.com',
 	license = 'MIT',
